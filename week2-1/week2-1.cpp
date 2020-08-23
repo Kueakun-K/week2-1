@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main() {
-	int level;
-	scanf_s("%d", &level);
-	for (int row = 0; row < level; row++)
+	int x;
+	scanf_s("%d", &x);
+	for (int r = 0; r < x; r++)
 	{
-		for (int star = level - row; star <= level; star++)
+		for (int s = x - r; s <= x; s++)
 		{
 			printf("* ");
 		}
