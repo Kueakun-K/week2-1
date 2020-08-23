@@ -1,9 +1,11 @@
 #include<stdio.h>
 int main() {
-	int x;
-	scanf_s("%d", &x);
-	for (int i=0; i <= x; i++) {
-		for (int l = x - i; l <= x; l++) {
+	int level;
+	scanf_s("%d", &level);
+	for (int row = 0; row < level; row++)
+	{
+		for (int star = level - row; star <= level; star++)
+		{
 			printf("* ");
 		}
 		printf("\n");
